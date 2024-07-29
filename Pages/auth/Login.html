@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8" />
+    <!-- Viewport settings for responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Page description for SEO -->
+    <meta
+      name="description"
+      content="eWaves Chat is a modern chat application providing an intuitive user interface and real-time communication features. Join conversations, manage messages, and stay connected with ease."
+    />
+    <!-- Keywords for SEO -->
+    <meta
+      name="keywords"
+      content="eWaves, Chat, Messaging, Real-time Communication, Chat Application"
+    />
+    <!-- Author of the page -->
+    <meta name="author" content="eWaves" />
+    <!-- Open Graph meta tags for social media sharing -->
+    <meta property="og:title" content="eWaves Chat" />
+    <meta
+      property="og:description"
+      content="eWaves Chat is a modern chat application providing an intuitive user interface and real-time communication features."
+    />
+    <meta property="og:image" content="./../../assets/chat/logo-chat.jpg" />
+    <!-- Favicon for the website -->
+    <link
+      rel="icon"
+      href="./../../assets/chat/logo-chat.jpg"
+      type="image/x-icon"
+    />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./../../styles/auth/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- Page title -->
+    <title>Login</title>
+  </head>
+  <body>
+    <div class="container loginFormSwitch" id="container">
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Create Account</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <button>Sign Up</button>
+        </form>
+      </div>
+      <div class="form-container sign-in-container">
+        <form action="#">
+          <h1>Sign in</h1>
+          <div class="social-container">
+            <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <span>or use your account</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="#">Forgot your password?</a>
+          <button>Sign In</button>
+        </form>
+      </div>
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <a href="./../../Main.html"
+              ><h3><u>Home</u></h3></a
+            >
+            <h1>Welcome Back!</h1>
+            <p>
+              To keep connected with us please login with your personal info
+            </p>
+            <button class="ghost" id="signIn">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <a href="./../../Main.html"
+              ><h3><u>Home</u></h3></a
+            >
+            <h1>Hello, Friend!</h1>
+            <p>Enter your personal details and start journey with us</p>
+            <button class="ghost" id="signUp">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="loginFormNormal">
+      <div class="form-container" id="login-form">
+        <a href="./../../Main.html"
+          ><h3><u>Home</u></h3></a
+        >
+        <h1>Login</h1>
+        <form>
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Login</button>
+        </form>
+        <p>
+          Don't have an account?
+          <a href="./signup.html" id="signup-link">Sign up</a>
+        </p>
+        <span>or</span>
+        <div class="social-container">
+          <span>
+            <i class="fa-brands fa-square-facebook"></i>
+          </span>
+          <span>
+            <i class="fa-brands fa-x-twitter"></i>
+          </span>
+          <span>
+            <i class="fa-brands fa-google"></i>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const signUpButton = document.getElementById("signUp");
+      const signInButton = document.getElementById("signIn");
+      const container = document.getElementById("container");
+
+      signUpButton.addEventListener("click", () => {
+        container.classList.add("right-panel-active");
+      });
+
+      signInButton.addEventListener("click", () => {
+        container.classList.remove("right-panel-active");
+      });
+    </script>
+  </body>
+</html>

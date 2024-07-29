@@ -1,0 +1,132 @@
+/* Mobile Screens */
+@media (max-width: 768px) {
+        /* Start Chat Page */
+    /* Hide conversation list on mobile screens */
+    .conversation-list {
+        width: 0px;
+        overflow: hidden;
+    }
+
+    /* Make chat area full width and move it to the left */
+    .chat-area {
+        left: 0;
+        width: 100%;
+    }
+
+    /* Hide right tabs on mobile screens */
+    .right-tabs {
+        width: 0px;
+        overflow: hidden;
+        left: 0;
+    }
+
+    /* Hide desktop dots and show mobile dots */
+    .dots-desktop {
+        display: none;
+    }
+
+    .dots-mobile {
+        display: block;
+    }
+
+    /* Show mobile right tabs */
+    .right-tabs-mobile {
+        display: block;
+    }
+
+        /* End Chat Page */
+    /* Start Main Page */
+        .mobile-menu-button {
+            display: block;
+        }
+    
+        .nav-links {
+            display: none;
+        }
+    
+        .mobile-menu {
+            display: block;
+            padding: 1rem;
+        }
+    
+        .mobile-menu a {
+            display: block;
+            padding: 1rem;
+            color: #e2e8f0;
+            /* Gray-200 */
+            text-decoration: none;
+        }
+    
+        .mobile-menu a.active {
+            background-color: #1a202c;
+            /* Gray-900 */
+            color: #ffffff;
+            border-radius: 0.25rem;
+        }
+    /* End Main Page */
+}
+
+/* Desktop Screens */
+@media (min-width: 769px) {
+
+    /* Show conversation list on desktop screens */
+    .conversation-list {
+        width: 176px;
+        overflow: auto;
+    }
+
+    /* Keep conversation list width at 176px when open */
+    .open {
+        width: 176px;
+    }
+
+    /* Adjust chat area position and width for desktop screens */
+    .chat-area {
+        left: 176px;
+    }
+
+    /* Show desktop dots and hide mobile dots */
+    .dots-desktop {
+        display: block;
+    }
+
+    .dots-mobile {
+        display: none;
+    }
+
+    /* Hide mobile right tabs */
+    .right-tabs-mobile {
+        display: none;
+    }
+         /* Start Main Page */
+         .mobile-menu-button {
+             display: none;
+         }
+    
+         .nav-links {
+             display: block;
+         }
+    
+         .mobile-menu {
+             display: none;
+             padding: 1rem;
+         }
+    
+         .mobile-menu a {
+             display: none;
+             padding: 1rem;
+             color: #e2e8f0;
+             /* Gray-200 */
+             text-decoration: none;
+         }
+    
+         .mobile-menu a.active {
+            display: none;
+             background-color: #1a202c;
+             /* Gray-900 */
+             color: #ffffff;
+             border-radius: 0.25rem;
+         }
+    
+         /* End Main Page */
+}
